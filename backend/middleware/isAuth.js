@@ -10,7 +10,7 @@ module.exports=(req,res,next)=>{
     const token=authHeader.split(' ')[1];//'bearer token'---frontend
     let decodedToken;
     try{
-        decodedToken=jwt.verify(token,'somesupersupersecretkey')
+        decodedToken=jwt.verify(token,'jwt key')
 
     }catch(err){
         err.statusCode=500;

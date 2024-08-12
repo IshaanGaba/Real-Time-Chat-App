@@ -42,7 +42,7 @@ app.use((error,req,res,next)=>{
     const data=error.data;
     res.status(statusCode).json({message:message,data:data})
 })
-mongoose.connect('mongodb+srv://ishaan:ishaan%4017@restapi.fi6vs0b.mongodb.net/restapi?retryWrites=true&w=majority&appName=restapi',{
+mongoose.connect('api key',{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     tls: true
